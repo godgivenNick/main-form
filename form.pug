@@ -1,0 +1,46 @@
+section#form-anchor.form
+	div.form__container
+		p.form__title Хотите стать дропшиппером?
+		p.form__text Оставьте свои контактные данные и мы свяжемся с вами для обсуждения условий сотрудничества.
+
+		form.main-form#form(action="main-form.php" method="post")
+
+			div.form-item
+				p.form__label Представьтесь, пожалуйста:
+				div.form__wrapper
+					input#name(type="text" name="name")
+
+			div.form-item
+				p.form__label Выберите тип сотрудничества:
+				div.form__radio
+					label
+						input.radio(type="radio" id="agent" name="type" value="agent" checked)
+						span.radio-custom
+						span.radio-label Агент
+
+					label
+						input.radio(type="radio" id="partner" name="type" value="partner")
+						span.radio-custom
+						span.radio-label Партнер
+
+			div.form-item
+				p.form__label Ваш телефон:
+				div.form__wrapper
+					input#phone(type="tel" name="phone" required)
+
+			div.form-item
+				p.form__label Ваш Email:
+				div.form__wrapper
+					input#email(type="email" name="email")
+
+			
+			label.label-checkbox
+				input.radio(type="checkbox" id="agree" name="agree" value="agree" checked required)
+				span.radio-custom
+				p.radio-label Я даю согласие на обработку моих персональных данных, с политикой конфиденциальности ознакомлен(-на).
+
+			p.success--hidden Ваша заявка успешно отправлена. Мы скоро свяжемся с вами.
+			button.btn.form__btn(name="submit" type="submit" id="submit") Отправить
+
+			div.popup-form__item
+				input#type(type="hidden" name="type" value="1")

@@ -1,0 +1,156 @@
+.form {
+    width: 100%;
+    min-height: 800px;
+    background: url('../img/form bgr.png') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    padding: 60px 15px 80px 15px;
+    color: white;
+  }
+  form.main-form {
+    max-width: 350px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+  }
+  form.main-form *,
+  form.main-form *::checked,
+  form.main-form *::before {
+    transition: 0.4s ease;
+  }
+  .form__container {
+    max-width: 720px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  .form__title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 65px;
+    margin-bottom: 25px;
+  }
+  .form__text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 28px;
+    margin-bottom: 25px;
+  }
+  .form__label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 3;
+    opacity: 0.412;
+    text-align: left;
+  }
+  .form-item {
+    margin-bottom: 25px;
+  }
+  .form__wrapper {
+    height: 46px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    transition: 0.2s ease-out;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    height: 46px;
+    border: 1px solid white;
+    border-radius: 23px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+    transition: 0.2s ease-out;
+  }
+  input[type="text"]:hover,
+  input[type="email"]:hover,
+  input[type="tel"]:hover {
+    box-shadow: 0px 0px 4px 0px white;
+  }
+  input {
+    width: 100%;
+    background: none!important;
+    color: white;
+  }
+  .form__radio {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+  }
+  .form__radio label {
+    text-align: left;
+  }
+  .form__radio label:first-child {
+    margin-right: 70px;
+  }
+  .radio {
+    display: none;
+  }
+  .radio-custom {
+    position: relative;
+    left: -10px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid;
+    border-radius: 50%;
+  }
+  .radio-custom,
+  .form__radio label {
+    display: flex;
+    align-items: center;
+  }
+  .radio-label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 28px;
+  }
+  .radio:checked + .radio-custom::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    left: 3px;
+    background: white;
+  }
+  .label-checkbox {
+    display: flex;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 30px;
+  }
+  .label-checkbox p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 14px;
+    text-align: left;
+  }
+  .label-checkbox .radio-custom {
+    left: -20px;
+    flex-shrink: 0;
+  }
+  .form__btn {
+    align-self: center;
+    color: white;
+    background: #0fcdaa;
+  }
+  .form__btn:hover,
+  .form__btn:active {
+    background: white;
+    color: #0fcdaa;
+  }
+  .success--hidden {
+    display: none;
+  }
